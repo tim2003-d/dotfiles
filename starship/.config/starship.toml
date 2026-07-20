@@ -12,6 +12,8 @@ $python\
 [](fg:venv_bg)\
 \n$character"""
 
+right_format = """$cmd_duration$status"""
+
 palette = "custom_colors"
 
 [palettes.custom_colors]
@@ -51,6 +53,17 @@ format = '[ $symbol($virtualenv )]($style)'
 pyenv_version_name = false
 detect_extensions = []
 detect_files = []
+
+[cmd_duration]
+min_time = 1_000
+style = "fg:#f59e0b"
+format = "took [$duration]($style) "
+
+[status]
+disabled = false
+symbol = "ERR: "
+style = "fg:#ef4444"
+format = "[$symbol$common_meaning$signal_name$numeric_exit_code]($style)"
 
 [os.symbols]
 Windows = "󰍲"
