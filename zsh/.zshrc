@@ -12,12 +12,14 @@
 
 
 # ------ CLI Tools ------
-# fzf 
+# fzf
+# Ctrl+R: Search command history
+# Ctrl+T: Search files
 source <(fzf --zsh)
 
 # eza
 alias ls="eza --color=always"
-alias la="eza --long --group-directories-first --color=always"
+alias la="eza --long --all --group-directories-first --color=always"
 alias tree="eza --tree --level=3 --color=always"
 export EZA_CONFIG_DIR="$HOME/.config/eza"
 

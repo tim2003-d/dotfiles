@@ -7,7 +7,9 @@ $directory\
 [](fg:dir_bg bg:git_bg)\
 $git_branch\
 $git_status\
-[](fg:git_bg)\
+[](fg:git_bg bg:venv_bg)\
+$python\
+[](fg:venv_bg)\
 \n$character"""
 
 palette = "custom_colors"
@@ -19,6 +21,8 @@ dir_bg = "#283662"
 dir_fg = "#e3e5e5"
 git_bg = "#5267aa"
 git_fg = "#e3e5e5"
+venv_bg = "#d97706"
+venv_fg = "#090c0c"
 
 [os]
 disabled = false
@@ -39,6 +43,14 @@ format = '[[ $symbol $branch ](fg:git_fg bg:git_bg)]($style)'
 [git_status]
 style = "bg:git_bg"
 format = '[[($all_status$ahead_behind )](fg:git_fg bg:git_bg)]($style)'
+
+[python]
+symbol = " "
+style = "fg:venv_fg bg:venv_bg"
+format = '[ $symbol($virtualenv )]($style)'
+pyenv_version_name = false
+detect_extensions = []
+detect_files = []
 
 [os.symbols]
 Windows = "󰍲"
