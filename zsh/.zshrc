@@ -15,6 +15,11 @@
 
 # ------ General Settings ------
 
+# Load local secrets if the file exists (without exposing to repo)
+if [ -f "$HOME/.secrets" ]; then
+    source "$HOME/.secrets"
+fi
+
 
 # ------ CLI Tools ------
 # fzf
