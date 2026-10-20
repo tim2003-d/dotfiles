@@ -4,9 +4,14 @@
 # - zsh-autosuggestions
 # - zsh-history-substring-search
 # - zsh-syntax-highlighting
+#
 # via package manager:
+# - starship
 # - fzf
 # - eza
+#
+# fonts:
+# - MesloLGS Nerd Font
 
 # ------ General Settings ------
 
