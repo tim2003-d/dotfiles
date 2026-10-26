@@ -1,7 +1,7 @@
 # Installation
 
 Use brew for installs (Brewfile).
-- Create/ Update Brewfile: `brew bundle dump`
+- Create/ Update Brewfile: `brew bundle dump (--force)`
 - Install from Brewfile: `brew bundle`
 
 Uses "GNU stow" to handle symlinks.
